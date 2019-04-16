@@ -16,8 +16,6 @@ import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.text.TextUtils;
 
-//import com.squareup.leakcanary.LeakCanary;
-
 
 public class App extends Application {
 
@@ -28,7 +26,6 @@ public class App extends Application {
         super.onCreate();
         _context = getApplicationContext();
         //初始化LeakCanaryAnaly
-//        LeakCanary.install(this);
        CrashCat.getInstance(getApplicationContext(), Environment.getExternalStorageDirectory().getPath()+"Data","sys_exception_file").start();
     }
 
