@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--发布信息标记是否可见页面-->
+    <include layout="@layout/activity_top"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公开"
+            android:checked="true"
+            android:textSize="16sp"
+            android:textColor="@color/prev_next_month_day_color"
+            />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅本社区"
+            android:layout_below="@id/rb_1"
+            android:textSize="16sp"
+            android:textColor="@color/prev_next_month_day_color"
+            />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+   </RadioGroup>
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@android:color/holo_red_light" >
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:contentDescription="@string/my_arbur"
+        android:src="@mipmap/icon_back" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/txt_titleStyle1"
+        android:text="@string/my_arbur"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/mess_type"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/push_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="发帖"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/button_shape"
+        android:layout_alignTop="@+id/txt_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+</RelativeLayout>
+

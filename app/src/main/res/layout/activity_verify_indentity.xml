@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--信息验证页面-->
+    <include layout="@layout/activity_top" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <!--<TextView
+                android:id="@+id/verify_community"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableRight="@mipmap/right_arrow"
+                android:text="社区认证" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />-->
+
+            <TextView
+                    android:id="@+id/verify_identity"
+                    style="@style/TxtTitle"
+                    android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/setting_item_selector"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="10dp"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:text="身份认证" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

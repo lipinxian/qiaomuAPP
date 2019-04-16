@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+   >
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/boder"
+        android:layout_weight="0.93"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/family_img"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/family_content"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="但是犯得上犯得上发反对"
+                android:layout_marginTop="20dp"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="公益币:"
+                    android:gravity="center"
+                    android:textColor="#ee3f3f"
+                    android:id="@+id/textView14"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/family_value"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="5/次"
+                    android:gravity="center"
+                    android:textColor="#ee3f3f"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView14"
+                    android:layout_toEndOf="@+id/textView14"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/family_button"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="做公益"
+                android:singleLine="false"
+                android:textColor="#5166f4"
+                android:background="@drawable/boder" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

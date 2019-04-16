@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"/>
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tbhost">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 定义第一个标签页家庭服务的内容 -->
+            <LinearLayout
+                android:id="@+id/tab01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp"
+                >
+                <ListView
+                    android:id="@+id/family_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <!-- 定义第二个标签页宠物看护的内容 -->
+            <LinearLayout
+                android:id="@+id/tab02"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp">
+                <ListView
+                    android:id="@+id/pet_care"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="8pt" />
+            </LinearLayout>
+            <!-- 定义第三个标签页的社区义工内容 -->
+            <LinearLayout
+                android:id="@+id/tab03"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="50dp">
+                <ListView
+                    android:id="@+id/community_volunteer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="8pt" />
+            </LinearLayout>
+        </FrameLayout>
+    </TabHost>
+</LinearLayout>

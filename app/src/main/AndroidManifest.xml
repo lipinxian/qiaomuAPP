@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.arborcommunity">
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="26" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <!--网络仿真权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 环信开始 -->
+   <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+      <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 环信结束 -->
+
+    <application
+        android:allowBackup="true"
+        android:name="com.arborcommunity.App"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        tools:replace="label,allowBackup"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.arborcommunity.MainActivity"
+            android:screenOrientation="portrait"></activity>
+       <activity
+           android:windowSoftInputMode="adjustUnspecified|stateHidden"
+           android:name=".view.activity.PolicyNoticeActivity"
+           android:screenOrientation="portrait">
+       </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.HomeworkDiscussActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.IdleShareActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.InterestActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.PolyLiveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.MoneyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activity.AboutAppActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activity.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activity.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.CommunityApplyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.AddCommunityMemberActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".view.activity.PublicBankActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".view.activity.PushInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.VisibleChooesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".view.activity.VerifyIndetifyActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".view.activity.AddCommunityActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.UserIdentityAuthenticationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".view.activity.AlertDialog"
+            android:theme="@style/MyDialogStyle"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.activity.BrowsingInformationActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <meta-data android:name="com.arborcommunity.net.glide.CachingGlideModule"
+            android:value="GlideModule"/>
+
+        <!--图片-->
+        <activity
+            android:theme="@style/customTheme"
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            />
+
+        <activity
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="423ff17515038a50c41085cc2dbd0087d2e51cbb" />
+    </application>
+
+   <!-- <uses-sdk tools:overrideLibrary="android.support."/>-->
+</manifest>

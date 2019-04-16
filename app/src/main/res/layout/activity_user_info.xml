@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/user_img"
+            android:background="@drawable/shape_gray_square_bg"
+            android:layout_gravity="center_horizontal"
+            android:padding="4dp"
+            />
+        <View  android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#c7c7fa"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/boder"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="真实姓名："
+                android:textColor="#AAAAAA"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:id="@+id/textView11" />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="false"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/boder"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="身份证号码："
+                android:textColor="#AAAAAA"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:id="@+id/identity_code" />
+            <EditText
+                android:id="@+id/identity"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="false"
+                android:layout_toRightOf="@+id/identity_code"
+                android:layout_toEndOf="@+id/identity_code" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/boder"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="昵称："
+                android:textColor="#AAAAAA"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:id="@+id/nick" />
+            <EditText
+                android:id="@+id/nick_name"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="false"
+                android:layout_toRightOf="@+id/nick"
+                android:layout_toEndOf="@+id/nick" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/boder"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="性别："
+                android:textColor="#AAAAAA"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center"
+                android:id="@+id/sex" />
+            <RadioGroup
+                android:id="@+id/rgSex"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sex"
+                android:layout_toEndOf="@+id/sex"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="男"
+                    android:gravity="center_vertical" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:gravity="center_vertical" />
+
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

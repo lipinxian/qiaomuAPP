@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.00"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_width="90dp"
+                android:text="姓        名:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView14" />
+            <EditText
+                android:id="@+id/realityName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:layout_toRightOf="@+id/textView14"
+                android:layout_toEndOf="@+id/textView14"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="-2dp"
+                android:textSize="13dip"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_width="90dp"
+                android:text="身份证号码:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView17" />
+            <EditText
+                android:id="@+id/left_10"
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:layout_toRightOf="@+id/textView17"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="-2dp"
+                android:textSize="13dip"
+                android:hint="身份证前10位"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical" />
+            <EditText
+                android:id="@+id/right_4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:textColorHint="#AAAAAA"
+                android:textSize="13dip"
+                android:hint="身份证后4位"
+                android:singleLine="true"
+                android:gravity="left|center_vertical"
+                android:layout_alignTop="@+id/left_10"
+                android:layout_toRightOf="@+id/left_10"
+                android:layout_toEndOf="@+id/left_10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_width="90dp"
+                android:text="详细地址:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView15" />
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:layout_toRightOf="@+id/textView15"
+                android:layout_toEndOf="@+id/textView15"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="-2dp"
+                android:textSize="13dip"
+                android:singleLine="true"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="90dp"
+                android:text="性       别:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView18" />
+            <CheckBox
+                android:id="@+id/radio1"
+                style="@style/select_style"
+                android:tag="rd2"
+                android:text="男"
+                android:layout_alignTop="@+id/radio2"
+                android:layout_centerHorizontal="true" />
+
+            <CheckBox
+                android:id="@+id/radio2"
+                style="@style/select_style"
+                android:tag="rd3"
+                android:text="女"
+                android:layout_marginLeft="38dp"
+                android:layout_marginStart="38dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/radio1"
+                android:layout_toEndOf="@+id/radio1" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/communityChose"
+            style="@style/TxtTitle"
+            android:textSize="16sp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="3dp"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="社区选择"
+            android:gravity="center_vertical|start|end" />
+        <RelativeLayout
+            android:id="@+id/identity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_width="108dp"
+                android:text="证件照片:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView16" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16"
+                android:id="@+id/identityImg"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/identityImg"
+                android:layout_toEndOf="@+id/identityImg"
+                android:text="(本人清晰照片)"
+                android:textColor="#72f332"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_marginTop="40dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="温馨提示：请正确填写姓名，管理员在三个工作日内完成审核，若名称错误，则影响审核结果。审核结果以短信通知，若超过该时间，请联系管理员"
+            android:textColor="#72f332"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="提交审核"
+        android:id="@+id/add_community_button"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

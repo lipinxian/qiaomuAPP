@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:id="@+id/mine_imge"
+            android:src="@mipmap/icon_default_avatar_gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小猪佩奇"
+            android:textColor="#fbf5f5"
+            android:textSize="25dp"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mineMoney"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:paddingLeft="8.0dip"
+            android:gravity="left|center"
+            android:drawableLeft="@mipmap/stock_title_money"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/srock_title_money"/>
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:id="@+id/mineApply"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:paddingLeft="8.0dip"
+            android:gravity="left|center"
+            android:drawableLeft="@mipmap/home_user_business_small"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/home_user_business_small"/>
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:id="@+id/mineInformation"
+            android:layout_width="fill_parent"
+            android:paddingLeft="8.0dip"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:drawableLeft="@mipmap/authentication"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/mine_identification"
+            android:gravity="left|center" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:id="@+id/mineSafety"
+            android:layout_width="fill_parent"
+            android:paddingLeft="8.0dip"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:gravity="left|center"
+            android:drawableLeft="@mipmap/btm_lock_selected"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/securitySet"/>
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+        <TextView
+            android:id="@+id/aboutAppInfo"
+            android:layout_width="fill_parent"
+            android:paddingLeft="8.0dip"
+            android:layout_height="50dp"
+            android:textSize="14sp"
+            android:gravity="left|center"
+            android:drawableLeft="@mipmap/about"
+            android:drawableRight="@mipmap/right_arrow"
+            android:text="@string/aboutApp" />
+        <View
+            android:background="@color/black2"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

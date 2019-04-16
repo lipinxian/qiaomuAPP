@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <include layout="@layout/activity_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_weight="0.10"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder">
+            <TextView
+                android:layout_width="108dp"
+                android:text="所在区域:"
+                style="@style/relativeLayoutText"
+                android:layout_height="fill_parent" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="100dp"
+                android:minHeight="30dp"
+                android:background="@drawable/singleline_item_bg"
+                android:id="@+id/province_relative"
+               >
+                <TextView
+                    android:hint="省份"
+                    android:id="@+id/province_text"
+                    style="@style/ourself_def_spinner_textView"
+                    >
+                </TextView>
+                <ImageButton
+                    android:id="@+id/province_relative_img"
+                    style="@style/ourself_def_spinner_ImageButton" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/city_relative"
+                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:minHeight="30dp"
+                android:background="@drawable/singleline_item_bg">
+                <TextView
+                    android:hint="城市"
+                    android:id="@+id/city_text"
+                    style="@style/ourself_def_spinner_textView"
+                    >
+                </TextView>
+                <ImageButton
+                    android:id="@+id/city_relative_img"
+                    style="@style/ourself_def_spinner_ImageButton" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="108dp"
+                android:text="社区名称:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView12" />
+            <EditText
+                android:id="@+id/add_community_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:layout_toRightOf="@+id/textView12"
+                android:layout_toEndOf="@+id/textView12"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="-2dp"
+                android:textSize="13dip"
+                android:singleLine="true"
+                android:hint="1-15个以内字符"
+                android:maxLength="10"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="108dp"
+                android:text="详细地址:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView13" />
+            <EditText
+                android:id="@+id/add_community_address"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip"
+                android:layout_toRightOf="@+id/textView13"
+                android:layout_toEndOf="@+id/textView13"
+                android:textColorHint="#AAAAAA"
+                android:layout_marginBottom="-2dp"
+                android:textSize="13dip"
+                android:singleLine="true"
+                android:hint="1-15个以内字符"
+                android:maxLength="10"
+                android:layout_marginTop="2dp"
+                android:gravity="left|center_vertical" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="温馨提示：请正确填写社区名称，工作人员在三个工作日内完成审核，若名称错误，则影响审核结果。审核结果以短信通知"
+            android:textColor="#72f332"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp" />
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linear_layout_boder"
+            android:layout_marginTop="3dp">
+            <TextView
+                android:layout_width="108dp"
+                android:text="角        色:"
+                style="@style/relativeLayoutText"
+                android:id="@+id/textView13" />
+            <RelativeLayout
+                android:layout_toRightOf="@+id/textView13"
+                style="@style/ourself_def_spinner_RelativeLayout">
+                <TextView
+                    android:id="@+id/role_type"
+                    style="@style/ourself_def_spinner_textView"
+                    >
+                </TextView>
+                <ImageButton
+                    style="@style/ourself_def_spinner_ImageButton" />
+            </RelativeLayout>
+        </RelativeLayout>-->
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="提交审核"
+        android:id="@+id/add_community_button"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape"
+        android:layout_marginTop="80dp" />
+
+</LinearLayout>
