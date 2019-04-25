@@ -41,7 +41,7 @@ public interface Constants {
 	//String MAIN_ENGINE = "http://wechatjuns.sinaapp.com/index.php/admin";
 
 	//String MAIN_ENGINE = "http://103.26.76.116:8080/admin/App/";
-	String MAIN_ENGINE = "http://192.168.2.104:8080/admin/App/";
+	String MAIN_ENGINE = "http://192.168.2.103:8080/admin/App/";
 	// 发送验证码 codeType 1注册 2修改密码
 	String SendCodeURL = "";
 	// 用户注册
